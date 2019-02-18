@@ -1,0 +1,5 @@
+FROM jimlebonitte/base-bokeh
+
+ENV BOKEH_EXAMPLE_DIR bokeh_examples
+COPY app_dir/hello_world.py $BOKEH_EXAMPLE_DIR/hello_world.py
+COPY app_dir/2019_skaters.csv $BOKEH_EXAMPLE_DIR/2019_skaters.csv
